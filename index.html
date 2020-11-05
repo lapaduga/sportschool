@@ -16,18 +16,17 @@
 		<div class="header">
 			<div class="container">
 				<div class="header__body">
+					<div class="header__close-area"></div>
 					<a href="#" class="header__logo">
 						<div class="header__image">
 							<img src="img/header/logo.png" alt="">
 						</div>
 						<div class="header__description">
-							Муниципальное бюджетное учреждение «Спортивная школа олимпийского резерва «Тодес» города Челябинска 
+							<span>Школа «Тодес»</span>
+							<p>Муниципальное бюджетное учреждение «Спортивная школа олимпийского резерва «Тодес» города Челябинска</p>
 						</div>
 					</a>
-					<div class="header__burger">
-						<span></span>
-					</div>
-					<nav class="header__menu">
+					<nav id="header-menu" class="header__menu">
 						<ul class="header__list">
 							<li>
 								<a href="#" class="header__link">
@@ -66,11 +65,18 @@
 							</li>
 						</ul>
 					</nav>
-					<form action="#" class="header__form" id="searchform">
+					<form action="#" class="header__form" id="search-form">
 						<input type="text" name="search-input" class="header__input">
-						<button type="submit" class="header__button"></button>
+						<button id="form-search-button" type="submit" class="header__button"></button>
 					</form>
-					<div class="header__open-search-button"></div>
+					<div id="search-button" class="header__open-search-button">
+					</div>
+					<div class="header__close-search-button">
+						<span class="close-search"></span>
+					</div>
+					<div class="header__burger">
+						<span></span>
+					</div>
 				</div>
 			</div>
 		</div>
