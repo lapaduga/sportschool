@@ -35,7 +35,7 @@ $(document).ready(function () {
 		}
 	});
 
-
+	
 	//burger
 	burger.onclick = function () {
 		burger.classList.toggle('active');
