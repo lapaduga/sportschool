@@ -44,6 +44,47 @@ body {
 	&.lock {
 		overflow: hidden;
 	}
+	&.mouse {
+		.header__list {
+			li {
+				&:hover {
+					.sub-menu__list {
+						opacity: 1;
+						visibility: visible;
+						li {
+							&:hover {
+								background: #234d8e;
+								.sub-menu__link {
+									color: #fff;
+								}
+							}
+						}
+					}
+					.header__link {
+						color: #234d8e;
+						&:after {
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+	&.touch {
+		.sub-menu__list.open {
+			opacity: 1;
+			visibility: visible;
+			background-color: #dae8fd;
+			padding: 10px;
+			position: relative;
+			z-index: 10;
+			left: -15px;
+			min-width: 100%;
+			li {
+				padding: 10px 20px 10px 20px;
+			}
+		}
+	}
 }
 .wrapper {
 	display: flex;
@@ -187,16 +228,22 @@ body {
 			position: relative;
 			margin: 0 0 0 50px;
 			transition: all 0.3s ease 0s;
-			&:hover {
-				.sub-menu__list {
-					opacity: 1;
-					visibility: visible;
+			.arrow {
+				transition: all 0.3s ease 0s;
+				display: none;
+				width: 12px;
+				height: 12px;
+				margin-left: 10px;
+				position: relative;
+				z-index: 2;
+				cursor: pointer;
+				background: url("../img/header/arrow-black.svg") center/contain no-repeat;
+				&.active {
+					background: url("../img/header/arrow.svg") center/contain no-repeat;
+					transform: rotate(180deg);
 				}
-				.header__link{
-					color: #234d8e;
-					&:after {
-						width: 100%;
-					}
+				@media (max-width: 1365px) {
+					display: inline-block;
 				}
 			}
 			@media (max-width: 1700px) {
@@ -401,6 +448,7 @@ body {
 			}
 		}
 	}
+
 	.sub-menu {
 		position: relative;
 		&__list {
@@ -412,6 +460,7 @@ body {
 			left: -46px;
 			top: 0px;
 			padding: 64px 0px 0px 0px;
+			margin-right: -30px;
 			min-width: 400px;
 			background-color: #ffffff;
 			li {
@@ -421,11 +470,7 @@ body {
 				&:last-child {
 					margin-bottom: 0;
 				}
-				&:hover{
-					background: #234D8E;
-					.sub-menu__link{
-						color: #fff;
-					}
+				@media (max-width: 1365px) {
 				}
 			}
 		}
