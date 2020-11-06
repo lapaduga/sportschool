@@ -46,24 +46,48 @@ body {
 	}
 	&.mouse {
 		.header__list {
-			li {
-				&:hover {
-					.sub-menu__list {
-						opacity: 1;
-						visibility: visible;
-						li {
-							&:hover {
-								background: #234d8e;
-								.sub-menu__link {
-									color: #fff;
+			@media (min-width: 1366px) {
+				li {
+					&:hover {
+						.sub-menu__list {
+							opacity: 1;
+							visibility: visible;
+							li {
+								&:hover {
+									background: #234d8e;
+									.sub-menu__link {
+										color: #fff;
+									}
 								}
 							}
 						}
+						.header__link {
+							color: #234d8e;
+							&:after {
+								width: 100%;
+							}
+						}
 					}
-					.header__link {
-						color: #234d8e;
-						&:after {
-							width: 100%;
+				}
+			}
+			//!!!Решить проблему
+			@media (max-width: 1365px) {
+				li {
+					&:hover {
+						.sub-menu__list {
+							&:hover {
+								opacity: 1;
+								visibility: visible;
+								background-color: #dae8fd;
+								padding: 10px;
+								position: relative;
+								z-index: 10;
+								left: -15px;
+								min-width: 100%;
+								li {
+									padding: 10px 20px 10px 20px;
+								}
+							}
 						}
 					}
 				}
@@ -400,6 +424,7 @@ body {
 		display: none;
 		position: relative;
 		z-index: 5;
+		cursor: pointer;
 		@media (max-width: 1365px) {
 			display: block;
 			position: relative;
@@ -469,8 +494,6 @@ body {
 				transition: all 0.3s ease 0s;
 				&:last-child {
 					margin-bottom: 0;
-				}
-				@media (max-width: 1365px) {
 				}
 			}
 		}

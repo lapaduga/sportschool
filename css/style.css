@@ -128,25 +128,39 @@ body.lock {
   overflow: hidden;
 }
 
-body.mouse .header__list li:hover .sub-menu__list {
-  opacity: 1;
-  visibility: visible;
+@media (min-width: 1366px) {
+  body.mouse .header__list li:hover .sub-menu__list {
+    opacity: 1;
+    visibility: visible;
+  }
+  body.mouse .header__list li:hover .sub-menu__list li:hover {
+    background: #234d8e;
+  }
+  body.mouse .header__list li:hover .sub-menu__list li:hover .sub-menu__link {
+    color: #fff;
+  }
+  body.mouse .header__list li:hover .header__link {
+    color: #234d8e;
+  }
+  body.mouse .header__list li:hover .header__link:after {
+    width: 100%;
+  }
 }
 
-body.mouse .header__list li:hover .sub-menu__list li:hover {
-  background: #234d8e;
-}
-
-body.mouse .header__list li:hover .sub-menu__list li:hover .sub-menu__link {
-  color: #fff;
-}
-
-body.mouse .header__list li:hover .header__link {
-  color: #234d8e;
-}
-
-body.mouse .header__list li:hover .header__link:after {
-  width: 100%;
+@media (max-width: 1365px) {
+  body.mouse .header__list li:hover .sub-menu__list:hover {
+    opacity: 1;
+    visibility: visible;
+    background-color: #dae8fd;
+    padding: 10px;
+    position: relative;
+    z-index: 10;
+    left: -15px;
+    min-width: 100%;
+  }
+  body.mouse .header__list li:hover .sub-menu__list:hover li {
+    padding: 10px 20px 10px 20px;
+  }
 }
 
 body.touch .sub-menu__list.open {
@@ -588,6 +602,7 @@ body.touch .sub-menu__list.open li {
   display: none;
   position: relative;
   z-index: 5;
+  cursor: pointer;
 }
 
 @media (max-width: 1365px) {
