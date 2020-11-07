@@ -93,4 +93,10 @@ $(document).ready(function () {
 			body.classList.toggle('lock');
 		}
 	}
+
+
+	//hide footer
+	$('.footer__mobile-button').on('click', function () {
+		$('._hidden-element').fadeToggle(500);
+	});
 });
