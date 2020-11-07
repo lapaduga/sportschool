@@ -162,6 +162,25 @@ body.mouse .sub-menu__list.open li {
   padding: 10px 20px 10px 20px;
 }
 
+@media (min-width: 1366px) {
+  body.touch li:hover .sub-menu__list {
+    opacity: 1;
+    visibility: visible;
+  }
+  body.touch li:hover .sub-menu__list li:hover {
+    background: #234d8e;
+  }
+  body.touch li:hover .sub-menu__list li:hover .sub-menu__link {
+    color: #fff;
+  }
+  body.touch li:hover .header__link {
+    color: #234d8e;
+  }
+  body.touch li:hover .header__link:after {
+    width: 100%;
+  }
+}
+
 body.touch .sub-menu__list.open {
   opacity: 1;
   visibility: visible;

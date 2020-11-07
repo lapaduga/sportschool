@@ -86,6 +86,30 @@ body {
 		}
 	}
 	&.touch {
+		@media (min-width: 1366px) {
+			li {
+				&:hover {
+					.sub-menu__list {
+						opacity: 1;
+						visibility: visible;
+						li {
+							&:hover {
+								background: #234d8e;
+								.sub-menu__link {
+									color: #fff;
+								}
+							}
+						}
+					}
+					.header__link {
+						color: #234d8e;
+						&:after {
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
 		.sub-menu__list.open {
 			opacity: 1;
 			visibility: visible;
