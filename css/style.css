@@ -147,20 +147,19 @@ body.lock {
   }
 }
 
-@media (max-width: 1365px) {
-  body.mouse .header__list li:hover .sub-menu__list:hover {
-    opacity: 1;
-    visibility: visible;
-    background-color: #dae8fd;
-    padding: 10px;
-    position: relative;
-    z-index: 10;
-    left: -15px;
-    min-width: 100%;
-  }
-  body.mouse .header__list li:hover .sub-menu__list:hover li {
-    padding: 10px 20px 10px 20px;
-  }
+body.mouse .sub-menu__list.open {
+  opacity: 1;
+  visibility: visible;
+  background-color: #dae8fd;
+  padding: 10px;
+  position: relative;
+  z-index: 10;
+  left: -15px;
+  min-width: 100%;
+}
+
+body.mouse .sub-menu__list.open li {
+  padding: 10px 20px 10px 20px;
 }
 
 body.touch .sub-menu__list.open {

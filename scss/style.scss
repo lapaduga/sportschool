@@ -70,27 +70,18 @@ body {
 					}
 				}
 			}
-			//!!!Решить проблему
-			@media (max-width: 1365px) {
-				li {
-					&:hover {
-						.sub-menu__list {
-							&:hover {
-								opacity: 1;
-								visibility: visible;
-								background-color: #dae8fd;
-								padding: 10px;
-								position: relative;
-								z-index: 10;
-								left: -15px;
-								min-width: 100%;
-								li {
-									padding: 10px 20px 10px 20px;
-								}
-							}
-						}
-					}
-				}
+		}
+		.sub-menu__list.open {
+			opacity: 1;
+			visibility: visible;
+			background-color: #dae8fd;
+			padding: 10px;
+			position: relative;
+			z-index: 10;
+			left: -15px;
+			min-width: 100%;
+			li {
+				padding: 10px 20px 10px 20px;
 			}
 		}
 	}
