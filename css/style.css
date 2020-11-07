@@ -364,7 +364,7 @@ body.touch .sub-menu__list.open li {
     width: 300px;
     height: 100%;
     background-color: #fff;
-    padding: 130px 15px 15px 15px;
+    padding: 70px 15px 15px 15px;
     -webkit-transform: translate(100%);
             transform: translate(100%);
   }
@@ -705,6 +705,12 @@ body.touch .sub-menu__list.open li {
 
 .header .sub-menu__list li:last-child {
   margin-bottom: 0;
+}
+
+.header .sub-menu__list-last {
+  left: -324px;
+  text-align: right;
+  min-width: 300px;
 }
 
 .header .sub-menu__link {
