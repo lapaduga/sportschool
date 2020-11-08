@@ -98,5 +98,7 @@ $(document).ready(function () {
 	//hide footer
 	$('.footer__mobile-button').on('click', function () {
 		$('._hidden-element').fadeToggle(500);
+		$('.show-info').fadeToggle(0);
+		$('.hide-info').fadeToggle(0);
 	});
 });

@@ -900,7 +900,7 @@ body.touch .sub-menu__list.open li {
     font-size: 16px;
     font-weight: 300;
     line-height: 30px;
-    letter-spacing: -0.02em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #ffffff;
     margin-bottom: 10px;
@@ -1210,4 +1210,8 @@ body.touch .sub-menu__list.open li {
   .footer ._hidden-element {
     display: none;
   }
+}
+
+.footer .hide-info {
+  display: none;
 }
