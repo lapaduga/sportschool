@@ -101,4 +101,20 @@ $(document).ready(function () {
 		$('.show-info').fadeToggle(0);
 		$('.hide-info').fadeToggle(0);
 	});
+
+
+	//mainscreen slider
+	$('.mainscreen__slider').slick({
+		dots: true,
+		//autoplay: true,
+		responsive:[
+			{
+				breakpoint: 993,
+				settings: {
+					dots: false,
+					arrows: false
+				}
+			}
+		]
+	});
 });
