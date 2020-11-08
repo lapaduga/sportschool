@@ -399,13 +399,14 @@ body.touch .sub-menu__list.open li {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   display: none;
-  width: 12px;
-  height: 12px;
+  width: 30px;
+  height: 20px;
   margin-left: 10px;
   position: relative;
+  top: 4px;
   z-index: 2;
   cursor: pointer;
-  background: url("../img/header/arrow-black.svg") center/contain no-repeat;
+  background: url("../img/header/arrow-black.svg") left center/contain no-repeat;
 }
 
 .header__list li .arrow.active {
@@ -459,6 +460,12 @@ body.touch .sub-menu__list.open li {
   display: inline-block;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 1365px) {
+  .header__link {
+    font-size: 16px;
+  }
 }
 
 .header__form {
@@ -707,10 +714,12 @@ body.touch .sub-menu__list.open li {
   margin-bottom: 0;
 }
 
-.header .sub-menu__list-last {
-  left: -324px;
-  text-align: right;
-  min-width: 300px;
+@media (min-width: 1366px) {
+  .header .sub-menu__list-last {
+    left: -324px;
+    text-align: right;
+    min-width: 300px;
+  }
 }
 
 .header .sub-menu__link {

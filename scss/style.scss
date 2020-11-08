@@ -270,13 +270,14 @@ body {
 			.arrow {
 				transition: all 0.3s ease 0s;
 				display: none;
-				width: 12px;
-				height: 12px;
+				width: 30px;
+				height: 20px;
 				margin-left: 10px;
 				position: relative;
+				top: 4px;
 				z-index: 2;
 				cursor: pointer;
-				background: url("../img/header/arrow-black.svg") center/contain no-repeat;
+				background: url("../img/header/arrow-black.svg") left center/contain no-repeat;
 				&.active {
 					background: url("../img/header/arrow.svg") center/contain no-repeat;
 					transform: rotate(180deg);
@@ -317,6 +318,9 @@ body {
 			width: 0%;
 			display: inline-block;
 			transition: all 0.3s ease 0s;
+		}
+		@media (max-width:1365px) {
+			font-size: 16px;
 		}
 	}
 
@@ -514,9 +518,11 @@ body {
 		}
 
 		&__list-last {
-			left: -324px;
-			text-align: right;
-			min-width: 300px;
+			@media (min-width:1366px) {
+				left: -324px;
+				text-align: right;
+				min-width: 300px;
+			}
 		}
 
 		&__link {
