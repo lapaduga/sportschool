@@ -106,7 +106,7 @@ $(document).ready(function () {
 	//mainscreen slider
 	$('.mainscreen__slider').slick({
 		dots: true,
-		//autoplay: true,
+		autoplay: true,
 		responsive:[
 			{
 				breakpoint: 993,
