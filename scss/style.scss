@@ -600,7 +600,7 @@ body {
 			font-size: 0;
 			height: 60px;
 			width: 60px;
-			@media (max-width:1365px){
+			@media (max-width: 1365px) {
 				left: 20px;
 			}
 		}
@@ -632,7 +632,7 @@ body {
 			position: absolute;
 			bottom: 60px;
 			left: 260px;
-			@media (max-width:1365px) {
+			@media (max-width: 1365px) {
 				left: 120px;
 			}
 		}
@@ -641,8 +641,8 @@ body {
 		}
 		/* Активная точка */
 		.slick-dots li.slick-active {
-			button{
-				background: #CAAD73;
+			button {
+				background: #caad73;
 				opacity: 1;
 			}
 		}
@@ -673,10 +673,10 @@ body {
 			left: 0;
 			z-index: 0;
 		}
-		@media (max-width:1365px) {
+		@media (max-width: 1365px) {
 			padding-left: 120px;
 		}
-		@media (max-width:992px) {
+		@media (max-width: 992px) {
 			padding: 20px;
 			justify-content: center;
 			height: 93vh;
@@ -691,10 +691,10 @@ body {
 		color: #ffffff;
 		max-width: 820px;
 		margin-bottom: 23px;
-		@media (max-width:992px) {
+		@media (max-width: 992px) {
 			font-size: 50px;
 		}
-		@media (max-width:767px) {
+		@media (max-width: 767px) {
 			font-size: 30px;
 		}
 	}
@@ -706,7 +706,7 @@ body {
 		color: #ffffff;
 		max-width: 820px;
 		margin-bottom: 42px;
-		@media (max-width:767px) {
+		@media (max-width: 767px) {
 			font-size: 16px;
 		}
 	}
@@ -736,6 +736,80 @@ body {
 			color: #caad73;
 			background: #ffffff;
 		}
+	}
+}
+
+//bluebar
+
+.bluebar {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+
+	&__body {
+		min-height: 160px;
+		background: #234d8e;
+		max-width: 948px;
+		width: 100%;
+		padding: 20px 60px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 0 -10px;
+		transform: translate(0, -50%);
+		@media (max-width:992px) {
+			transform: translate(0);
+			max-width: 100%;
+			margin: 0;
+		}
+		@media (max-width:767px) {
+			flex-direction: column;
+			text-align: center;
+			padding: 20px;
+		}
+	}
+
+	&__title {
+		font-family: "Playfair Display";
+		font-weight: bold;
+		font-size: 34px;
+		line-height: 106%;
+		color: #4972b3;
+		max-width: 236px;
+		padding: 0 10px;
+		@media (max-width:767px){
+			max-width: 100%;
+			margin-bottom: 10px;
+		}
+	}
+
+	&__type {
+		max-width: 150px;
+		color: #ffffff;
+		padding: 0 10px;
+		@media (max-width:767px){
+			max-width: 100%;
+			margin-bottom: 10px;
+		}
+	}
+
+	&__subtitle {
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 120%;
+		letter-spacing: -0.02em;
+		margin-bottom: 10px;
+		&:hover{
+			text-decoration: underline;
+		}
+		@media (max-width:767px){
+			max-width: 100%;
+			margin-bottom: 0px;
+		}
+	}
+
+	&__text {
+		color: #4972B3;
 	}
 }
 

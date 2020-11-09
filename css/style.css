@@ -855,7 +855,7 @@ body.touch .sub-menu__list.open li {
 }
 
 .mainscreen__slider .slick-dots li.slick-active button {
-  background: #CAAD73;
+  background: #caad73;
   opacity: 1;
 }
 
@@ -967,6 +967,111 @@ body.touch .sub-menu__list.open li {
 .mainscreen .button:hover {
   color: #caad73;
   background: #ffffff;
+}
+
+.bluebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.bluebar__body {
+  min-height: 160px;
+  background: #234d8e;
+  max-width: 948px;
+  width: 100%;
+  padding: 20px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -10px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+@media (max-width: 992px) {
+  .bluebar__body {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .bluebar__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+.bluebar__title {
+  font-family: "Playfair Display";
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 106%;
+  color: #4972b3;
+  max-width: 236px;
+  padding: 0 10px;
+}
+
+@media (max-width: 767px) {
+  .bluebar__title {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.bluebar__type {
+  max-width: 150px;
+  color: #ffffff;
+  padding: 0 10px;
+}
+
+@media (max-width: 767px) {
+  .bluebar__type {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.bluebar__subtitle {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+}
+
+.bluebar__subtitle:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  .bluebar__subtitle {
+    max-width: 100%;
+    margin-bottom: 0px;
+  }
+}
+
+.bluebar__text {
+  color: #4972B3;
 }
 
 .footer {
