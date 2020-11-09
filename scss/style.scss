@@ -909,6 +909,11 @@ body {
 			max-width: 100%;
 		}
 	}
+	&__button-container{
+		@media (max-width:767px) {
+			align-self: center;
+		}
+	}
 
 	&__bottom {
 		padding: 0 15px;
