@@ -944,6 +944,28 @@ body {
 	}
 }
 
+//news
+
+
+
+//schedule
+
+.schedule {
+	min-height: 240px;
+	background: #234D8E;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&__button {
+		@media (max-width:767px) {
+			max-width: 280px;
+			text-align: center;
+			line-height: 130%;
+			letter-spacing: 5px;
+		}
+	}
+}
+
 //footer
 
 .footer {
