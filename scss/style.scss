@@ -757,12 +757,12 @@ body {
 		justify-content: space-between;
 		margin: 0 -10px;
 		transform: translate(0, -50%);
-		@media (max-width:992px) {
+		@media (max-width: 992px) {
 			transform: translate(0);
 			max-width: 100%;
 			margin: 0;
 		}
-		@media (max-width:767px) {
+		@media (max-width: 767px) {
 			flex-direction: column;
 			text-align: center;
 			padding: 20px;
@@ -777,7 +777,7 @@ body {
 		color: #4972b3;
 		max-width: 236px;
 		padding: 0 10px;
-		@media (max-width:767px){
+		@media (max-width: 767px) {
 			max-width: 100%;
 			margin-bottom: 10px;
 		}
@@ -787,7 +787,7 @@ body {
 		max-width: 150px;
 		color: #ffffff;
 		padding: 0 10px;
-		@media (max-width:767px){
+		@media (max-width: 767px) {
 			max-width: 100%;
 			margin-bottom: 10px;
 		}
@@ -799,17 +799,79 @@ body {
 		line-height: 120%;
 		letter-spacing: -0.02em;
 		margin-bottom: 10px;
-		&:hover{
+		&:hover {
 			text-decoration: underline;
 		}
-		@media (max-width:767px){
+		@media (max-width: 767px) {
 			max-width: 100%;
 			margin-bottom: 0px;
 		}
 	}
 
 	&__text {
-		color: #4972B3;
+		color: #4972b3;
+	}
+}
+
+//articles
+
+.articles {
+	margin: 0 0 100px 0;
+	&__body {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin: 0 -12px;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		flex: 0 1 33.333%;
+		padding: 0 12px;
+		margin-bottom: 20px;
+		min-width: 280px;
+	}
+
+	&__image {
+		padding: 0 0 75% 0;
+		overflow: hidden;
+		position: relative;
+		margin-bottom: 12px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	&__link {
+		font-weight: bold;
+		font-size: 24px;
+		color: #234d8e;
+		transition: all 0.3s ease 0s;
+		&:after{
+			content: '';
+			transition: all 0.3s ease 0s;
+			background: url('../img/articles/arrow.svg') center no-repeat;
+			width: 10px;
+			height: 20px;
+			display: inline-block;
+			transform: translate(0px, 3px);
+			padding-right: 50px;
+		}
+		&:hover{
+			text-decoration: underline;
+			&:after{
+				background: url('../img/articles/arrow-hover.svg') center no-repeat;
+			}
+		}
+	}
+	@media (max-width:992px) {
+		margin: 30px 0;
 	}
 }
 
