@@ -1613,6 +1613,18 @@ body.touch .sub-menu__list.open li {
   background: url("../img/article/bg.jpg") center/cover no-repeat;
 }
 
+.top-gallery {
+  background: url("../img/gallery/bg.jpg") center/cover no-repeat;
+}
+
+.top-gallery .top__body {
+  min-height: 180px;
+  padding: 20px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .top__body {
   padding-top: 60px;
   min-height: 280px;

@@ -1169,6 +1169,14 @@ body {
 	&-article {
 		background: url("../img/article/bg.jpg") center/cover no-repeat;
 	}
+	&-gallery {
+		background: url("../img/gallery/bg.jpg") center/cover no-repeat;
+		.top__body {
+			min-height: 180px;
+			padding: 20px 0;
+			justify-content: center;
+		}
+	}
 	&__body {
 		padding-top: 60px;
 		min-height: 280px;
@@ -1431,7 +1439,7 @@ body {
 			color: #fff;
 		}
 		@media (max-width: 460px) {
-			span{
+			span {
 				display: none;
 			}
 			max-width: 220px;
@@ -1468,6 +1476,28 @@ body {
 	&__right-arrow {
 		margin-left: 10px;
 		background: url("../img/list/right.svg") center no-repeat, #fff;
+	}
+}
+
+//gallery
+
+.gallery {
+	&__body {
+	}
+
+	&__item {
+	}
+
+	&__item-hover {
+	}
+
+	&__image {
+	}
+
+	&__link {
+	}
+
+	&__pagination {
 	}
 }
 
