@@ -233,6 +233,10 @@ body.touch .sub-menu__list.open li {
   z-index: 2;
 }
 
+.header-subordinate:before {
+  background: #F2F2F2;
+}
+
 .header__body {
   position: relative;
   display: -webkit-box;

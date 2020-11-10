@@ -156,6 +156,12 @@ body {
 		z-index: 2;
 	}
 
+	&-subordinate{
+		&:before{
+			background: #F2F2F2;
+		}
+	}
+
 	&__body {
 		position: relative;
 		display: flex;
