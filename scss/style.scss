@@ -1483,21 +1483,69 @@ body {
 
 .gallery {
 	&__body {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 0 -12px;
+		padding: 48px 0 24px 0;
+		@media (max-width: 767px) {
+			padding: 48px 0 0 0;
+		}
 	}
 
 	&__item {
+		flex: 0 1 33.333%;
+		position: relative;
+		min-width: 280px;
+		padding: 0 12px;
+		margin-bottom: 28px;
+		transition: all 0.3s ease 0s;
+		@media (min-width: 1024px) {
+			&:hover {
+				.gallery__image-hover {
+					opacity: 1;
+					visibility: visible;
+				}
+				a{
+					text-decoration: underline;
+				}
+			}
+		}
 	}
 
-	&__item-hover {
+	&__image-hover {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		background: url("../img/gallery/watch.svg") center no-repeat, rgba(0, 0, 0, 0.4);
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.3s ease 0s;
 	}
 
 	&__image {
+		margin: 0 0 18px 0;
+		padding: 0 0 71% 0;
+		overflow: hidden;
+		position: relative;
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
 	}
 
 	&__link {
-	}
-
-	&__pagination {
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 120%;
+		color: #234d8e;
 	}
 }
 
