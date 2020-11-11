@@ -1368,6 +1368,11 @@ body {
 			font-size: 20px;
 		}
 	}
+	&__title-article{
+		&:hover {
+			text-decoration: none;
+		}
+	}
 
 	&__date {
 		font-size: 12px;

@@ -1891,6 +1891,10 @@ body.touch .sub-menu__list.open li {
   }
 }
 
+.event__title-article:hover {
+  text-decoration: none;
+}
+
 .event__date {
   font-size: 12px;
   line-height: 250%;
