@@ -2031,6 +2031,14 @@ body.touch .sub-menu__list.open li {
   background: url("../img/list/right.svg") center no-repeat, #fff;
 }
 
+@media (max-width: 992px) {
+  .pagination {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .gallery__body {
   display: -webkit-box;
   display: -ms-flexbox;
