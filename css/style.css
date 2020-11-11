@@ -2106,6 +2106,72 @@ body.touch .sub-menu__list.open li {
   color: #234d8e;
 }
 
+.set__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 -12px;
+  padding: 48px 0 24px 0;
+}
+
+@media (max-width: 767px) {
+  .set__body {
+    padding: 48px 0 0 0;
+  }
+}
+
+.set__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+  min-width: 280px;
+  padding: 12px;
+}
+
+.set__image {
+  position: relative;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  padding: 0 0 71% 0;
+  overflow: hidden;
+}
+
+.set__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 1024px) {
+  .set__image:hover .set__hover {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.set__hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: url("../img/set/zoom.svg") center no-repeat, rgba(36, 78, 143, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
 .footer {
   background: #132e51;
 }
