@@ -1928,6 +1928,10 @@ body.touch .sub-menu__list.open li {
   font-weight: 300;
 }
 
+.event__text-article ul {
+  margin-bottom: 15px;
+}
+
 .event__text-article ul li {
   position: relative;
   margin-left: 10px;
