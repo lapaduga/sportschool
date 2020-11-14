@@ -2165,6 +2165,7 @@ body.touch .sub-menu__list.open li {
      object-fit: cover;
   width: 100%;
   height: 100%;
+  display: block;
 }
 
 @media (min-width: 1024px) {
@@ -2186,6 +2187,12 @@ body.touch .sub-menu__list.open li {
   visibility: hidden;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 1023px) {
+  .set__hover {
+    visibility: visible;
+  }
 }
 
 .footer {
