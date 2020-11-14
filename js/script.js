@@ -6,7 +6,7 @@ $(document).ready(function () {
 	const closeArea = document.querySelector('.header__close-area');
 
 	//dropdown menu
-	let isMobile = {
+/* 	let isMobile = {
 		Android: function () { return navigator.userAgent.match(/Android/i); },
 		BlackBerry: function () { return navigator.userAgent.match(/BlackBerry/i); },
 		iOS: function () { return navigator.userAgent.match(/iPhone|iPad|iPod/i); },
@@ -14,7 +14,7 @@ $(document).ready(function () {
 		Windows: function () { return navigator.userAgent.match(/IEMobile/i); },
 		any: function () { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); }
 	};
-	if (isMobile.any()) {
+	if (isMobile.any()) { */
 		body.classList.add('touch');
 		let arrow = document.querySelectorAll('.arrow');
 		for (i = 0; i < arrow.length; i++) {
@@ -28,7 +28,8 @@ $(document).ready(function () {
 				thisArrow.classList.toggle('active');
 			});
 		}
-	} else {
+		
+/* 	} else {
 		body.classList.add('mouse');
 		let arrow = document.querySelectorAll('.arrow');
 		for (i = 0; i < arrow.length; i++) {
@@ -42,7 +43,7 @@ $(document).ready(function () {
 				thisArrow.classList.toggle('active');
 			});
 		}
-	}
+	} */
 
 
 	//header search
